@@ -55,7 +55,6 @@ async def stats(ctx):
       time_sums[user_id] += leave_time - join_time
 
   stats = ""
-  print(time_sums.keys())
   for user_id in time_sums:
     time = str(time_sums[user_id]).split('.')[0] # last part removes microseconds
     stats += bot.get_user(user_id).name + ": " + time + "\n"
