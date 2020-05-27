@@ -21,6 +21,8 @@ async def on_ready():
     print(bot.user.id)
     print('------')
 
+# Test from Ruben
+print("hello world")
 
 @bot.command()
 async def hello(ctx):
